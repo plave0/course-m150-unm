@@ -1,0 +1,1 @@
+function d=dominantna(A)    d = 1;  [n,m] = size(A);    for i=1:n    s = sum(abs(A(i,:))) - abs(A(i,i));    if(abs(A(i,i)) <= s)      d = 0;      break;    endif  endfor
